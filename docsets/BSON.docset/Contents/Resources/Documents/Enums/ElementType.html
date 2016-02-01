@@ -14,7 +14,7 @@
     <a title="ElementType Enum Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BSON Docs</a> (13% documented)</p>
+        <p><a href="../index.html">BSON Docs</a> (38% documented)</p>
         <p class="header-right"><a href="https://github.com/PlanTeam/BSON"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -111,7 +111,13 @@
         <section>
           <section class="section">
             <h1>ElementType</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ElementType</span> <span class="p">:</span> <span class="kt">UInt8</span></code></pre>
+
+                </div>
+              </div>
+            <p>All BSON Element types</p>
 
           </section>
           <section class="section task-group-section">
@@ -130,8 +136,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a Double</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mh">0x01</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -153,8 +167,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number represents that the type is an UTF8 String</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">String</span> <span class="o">=</span> <span class="mh">0x02</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -176,8 +198,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a Document or Dictionary</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Document</span> <span class="o">=</span> <span class="mh">0x03</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -199,8 +229,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is an array</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Array</span> <span class="o">=</span> <span class="mh">0x04</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -222,8 +260,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a binary array</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Binary</span> <span class="o">=</span> <span class="mh">0x05</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -245,8 +291,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is an objectID</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">ObjectId</span> <span class="o">=</span> <span class="mh">0x07</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -268,8 +322,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a boolean</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="mh">0x08</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -291,8 +353,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a datetime value</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">DateTime</span> <span class="o">=</span> <span class="mh">0x09</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -314,8 +384,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is null (no value)</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">NullValue</span> <span class="o">=</span> <span class="mh">0x0A</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -337,8 +415,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a regex</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">RegularExpression</span> <span class="o">=</span> <span class="mh">0x0B</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -360,8 +446,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is JavaScript Code</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">JavaScriptCode</span> <span class="o">=</span> <span class="mh">0x0D</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -383,8 +477,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is JavaScript code without a scope</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">JavascriptCodeWithScope</span> <span class="o">=</span> <span class="mh">0x0F</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -406,8 +508,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is an 32-bit integer</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Int32</span> <span class="o">=</span> <span class="mh">0x10</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -429,8 +539,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a timestamp</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Timestamp</span> <span class="o">=</span> <span class="mh">0x11</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -452,8 +570,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is an 32-bit integer</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">Int64</span> <span class="o">=</span> <span class="mh">0x12</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -475,8 +601,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a BSON min-key</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">MinKey</span> <span class="o">=</span> <span class="mh">0xFF</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -498,8 +632,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This number repesents that the type is a BSON max-key</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">case</span> <span class="kt">MaxKey</span> <span class="o">=</span> <span class="mh">0x7F</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

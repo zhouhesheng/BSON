@@ -14,7 +14,7 @@
     <a title="BSONElementConvertible Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BSON Docs</a> (13% documented)</p>
+        <p><a href="../index.html">BSON Docs</a> (38% documented)</p>
         <p class="header-right"><a href="https://github.com/PlanTeam/BSON"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -111,7 +111,13 @@
         <section>
           <section class="section">
             <h1>BSONElementConvertible</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BSONElementConvertible</span> <span class="p">:</span> <span class="kt">AbstractBSONBase</span></code></pre>
+
+                </div>
+              </div>
+            <p>Anything complying to the protocol is conertible from- and to BSON Binary</p>
 
           </section>
           <section class="section task-group-section">
@@ -132,6 +138,14 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BSONElementConvertible</span> <span class="p">:</span> <span class="kt">AbstractBSONBase</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -176,8 +190,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The length of this variable when converted to an Array of UInt8</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">bsonLength</span><span class="p">:</span> <span class="kt">BsonLength</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -195,7 +217,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The initializer expects the data for this element, starting AFTER the element type</p>
+                        <p>The initializer expects the data for this element, starting AFTER the element type
+The input consumedBytes is set the the amount of bytes we consumed instantiating this variable</p>
 
                       </div>
                       <div class="declaration">
@@ -222,8 +245,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The initializer expects the data for this element, starting AFTER the element type</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiate</span><span class="p">(</span><span class="n">bsonData</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

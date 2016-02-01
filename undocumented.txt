@@ -1,31 +1,6 @@
 Element.swift
 	public protocol AbstractBSONBase {}
-	public enum ElementType : UInt8
-	case Double = 0x01
-	case String = 0x02
-	case Document = 0x03
-	case Array = 0x04
-	case Binary = 0x05
-	case ObjectId = 0x07
-	case Boolean = 0x08
-	case DateTime = 0x09
-	case NullValue = 0x0A
-	case RegularExpression = 0x0B
-	case JavaScriptCode = 0x0D
-	case JavascriptCodeWithScope = 0x0F
-	case Int32 = 0x10
-	case Timestamp = 0x11
-	case Int64 = 0x12
-	case MinKey = 0xFF
-	case MaxKey = 0x7F
-	public enum BsonLength
-	case Undefined
-	case Fixed(length: Int)
-	case NullTerminated
-	public protocol BSONElementConvertible : AbstractBSONBase
 	var elementType: ElementType { get }
-	static var bsonLength: BsonLength { get }
-	static func instantiate(bsonData data: [UInt8]) throws -> Self
 Boolean.swift
 	public var elementType: ElementType
 	public static func instantiate(bsonData data: [UInt8]) throws -> Bool
@@ -52,15 +27,6 @@ Binary.swift
 	public init(binaryData: [UInt8], subType: UInt8 = 0)
 	public static func instantiate(bsonData data: [UInt8]) throws -> Binary
 	public convenience init(_ binary: Binary)
-Error.swift
-	public enum DeserializationError : ErrorType
-	case InvalidDocumentLength
-	case InvalidElementSize
-	case InvalidElementContents
-	case UnknownElementType
-	case InvalidLastElement
-	case ParseError
-	case InvalidOperation
 ArrayDictionaryDocument.swift
 	public prefix func *(input: [String : AbstractBSONBase]) -> [String : AbstractBSONBase]
 	public prefix func *(input: [AbstractBSONBase]) -> [AbstractBSONBase]
