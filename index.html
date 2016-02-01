@@ -13,7 +13,7 @@
     <a title="BSON  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">BSON Docs</a> (38% documented)</p>
+        <p><a href="index.html">BSON Docs</a> (39% documented)</p>
         <p class="header-right"><a href="https://github.com/PlanTeam/BSON"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -119,7 +119,40 @@
 
 <p>You can use this library trough Carthage, git submodules or the Swift Package Manager (currently Linux-only).</p>
 
+<p>The project contains a tutorial playground. That&rsquo;s probably the best way to learn!</p>
+
 <p>Check the <a href="https://planteam.github.io/BSON/">documentation</a> for more information.</p>
+<a href='#basic_usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='basic_usage'>Basic Usage</h4>
+<pre class="highlight swift"><code><span class="c1">// Create a document using a dictionary literal</span>
+<span class="k">let</span> <span class="nv">document</span><span class="p">:</span> <span class="kt">Document</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s">"hello"</span><span class="p">:</span> <span class="s">"I am a BSON document"</span><span class="p">,</span>
+            <span class="s">"temperature"</span><span class="p">:</span> <span class="mf">42.5</span>
+        <span class="p">]</span>
+
+<span class="c1">// Retreive the BSON data, ready for storing or sending over the network</span>
+<span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">bsonData</span> <span class="c1">// Array of [UInt8]</span>
+
+<span class="c1">// Initialize a document using a [UInt8]</span>
+<span class="k">let</span> <span class="nv">sameDocument</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">Document</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">data</span><span class="p">)</span>
+
+<span class="c1">// Do something with the data</span>
+<span class="k">guard</span> <span class="k">let</span> <span class="nv">temperature</span> <span class="o">=</span> <span class="n">document</span><span class="p">[</span><span class="s">"temperature"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">Double</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// do something with the error here</span>
+    <span class="nf">abort</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="c1">// Use the temperature</span>
+</code></pre>
+<a href='#embedded_documents' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='embedded_documents'>Embedded documents</h4>
+
+<p>Due to the Swift compiler sometimes creating NSArray instances, use the <code>prefix operator *</code> with embedded documents.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">document</span><span class="p">:</span> <span class="kt">Document</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s">"subdocument"</span><span class="p">:</span> <span class="o">*</span><span class="p">[</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"mother of god"</span><span class="p">],</span>
+            <span class="s">"anothersubdocument"</span><span class="p">:</span> <span class="o">*</span><span class="p">[</span><span class="s">"key"</span><span class="p">:</span> <span class="mf">81.2</span><span class="p">]</span> <span class="c1">// an array is also an embedded document</span>
+        <span class="p">]</span>
+</code></pre>
+
+<p>Code not using this operator will compile, but the embedded documents won&rsquo;t be inserted in your document. A warning will be logged to the console.</p>
 <a href='#supported_types' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='supported_types'>Supported Types</h3>
 
 <ul>
