@@ -8,13 +8,13 @@ Boolean.swift
 NSDate.swift
 	public var elementType: ElementType
 	public static func instantiate(bsonData data: [UInt8]) throws -> Self
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Self
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> Self
 	public var bsonData: [UInt8]
 	public static let bsonLength = BsonLength.Fixed(length: 8)
 Integer32.swift
 	public var elementType: ElementType
 	public static func instantiate(bsonData data: [UInt8]) throws -> Int32
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Int32
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> Int32
 	public var bsonData: [UInt8]
 	public static let bsonLength = BsonLength.Fixed(length: 4)
 RegularExpression.swift
@@ -26,7 +26,7 @@ RegularExpression.swift
 	public var bsonData: [UInt8]
 	public static var bsonLength: BsonLength
 	public static func instantiate(bsonData data: [UInt8]) throws -> RegularExpression
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> RegularExpression
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> RegularExpression
 Binary.swift
 	public var elementType: ElementType
 	public var data: [UInt8]
@@ -34,17 +34,37 @@ Binary.swift
 	public var bsonData: [UInt8]
 	public static var bsonLength: BsonLength
 	public init(data: NSData, subType: UInt8 = 0)
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Binary
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> Binary
 	public static func instantiate(bsonData data: [UInt8]) throws -> Binary
-Integer16.swift
-	public static func instantiate(bsonData data: [UInt8]) throws -> Int16
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Int16
-	public var bsonData: [UInt8]
+Document.swift
+	public struct Document
+	public struct Document
+	public struct Document
+	public struct Document
+	public struct Document
+	public init(data: NSData) throws
+	public init(data: [UInt8]) throws
+	public struct Document
+	public static func instantiateAll(data: [UInt8]) throws -> [Document]
+	public struct Document
+	public var description: String
+Document+LiteralConvertibles.swift
+	public init(array: [BSONElementConvertible])
 String.swift
 	public var elementType: ElementType
 	public static func instantiate(bsonData data: [UInt8]) throws -> String
 	public var cStringBsonData: [UInt8]
 	public static let bsonLength = BsonLength.Undefined
+JavaScriptCode.swift
+	public struct JavaScriptCode
+	public var code: String
+	public var scope: Document?
+	public init(code: String, scope: Document? = nil)
+	public var elementType: ElementType
+	public var bsonData: [UInt8]
+	public static let bsonLength = BsonLength.Undefined
+	public static func instantiate(bsonData data: [UInt8]) throws -> JavaScriptCode
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> JavaScriptCode
 Null.swift
 	public struct Null : BSONElementConvertible
 	public init() {}
@@ -56,16 +76,16 @@ Timestamp.swift
 	public var bsonData: [UInt8]
 	public static var bsonLength: BsonLength
 	public static func instantiate(bsonData data: [UInt8]) throws -> Timestamp
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Timestamp
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> Timestamp
 Integer64.swift
 	public var elementType: ElementType
 	public static func instantiate(bsonData data: [UInt8]) throws -> Int64
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Int64
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> Int64
 	public var bsonData: [UInt8]
 	public static let bsonLength = BsonLength.Fixed(length: 8)
 	public var elementType: ElementType
 	public static func instantiate(bsonData data: [UInt8]) throws -> Int
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Int
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> Int
 	public var bsonData: [UInt8]
 	public static let bsonLength = Int64.bsonLength
 ObjectId.swift
@@ -81,41 +101,19 @@ ObjectId.swift
 	public static func instantiate(bsonData data: [UInt8]) throws -> ObjectId
 	public struct ObjectId
 	public var debugDescription: String
-Double.swift
-	public var elementType: ElementType
-	public static func instantiate(bsonData data: [UInt8]) throws -> Double
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Double
-	public var bsonData: [UInt8]
-	public static let bsonLength = BsonLength.Fixed(length: 8)
-MinMaxKey.swift
-	public struct MinKey : BSONElementConvertible
-	public init() {}
-	public let elementType = ElementType.MinKey
-	public let bsonData = [UInt8]()
-	public static var bsonLength = BsonLength.Fixed(length: 0)
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> MinKey
-	public static func instantiate(bsonData data: [UInt8]) throws -> MinKey
-	public struct MaxKey : BSONElementConvertible
-	public init() {}
-	public let elementType = ElementType.MaxKey
-	public let bsonData = [UInt8]()
-	public static var bsonLength = BsonLength.Fixed(length: 0)
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> MaxKey
-	public static func instantiate(bsonData data: [UInt8]) throws -> MaxKey
-Document.swift
-	public struct Document
-	public init(data: NSData) throws
-	public init(data: [UInt8]) throws
-	public struct Document
+Document+BSONElementConvertible.swift
 	public var elementType: ElementType
 	public var bsonData: [UInt8]
 	public static func instantiate(bsonData data: [UInt8]) throws -> Document
-	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int) throws -> Document
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> Document
 	public static let bsonLength = BsonLength.Undefined
-	public struct Document
-	public init(array: [BSONElementConvertible])
-	public struct Document
-	public struct Document
+Double.swift
+	public var elementType: ElementType
+	public static func instantiate(bsonData data: [UInt8]) throws -> Double
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> Double
+	public var bsonData: [UInt8]
+	public static let bsonLength = BsonLength.Fixed(length: 8)
+Document+SequenceType.swift
 	public var startIndex: DictionaryIndex<Key, FooValue>
 	public var endIndex: DictionaryIndex<Key, FooValue>
 	public func indexForKey(key: Key) -> DictionaryIndex<Key, FooValue>?
@@ -128,5 +126,18 @@ Document.swift
 	public var keys: LazyMapCollection<[Key : FooValue], Key>
 	public var values: LazyMapCollection<[Key : FooValue], FooValue>
 	public var isEmpty: Bool
-	public struct Document
-	public var description: String
+MinMaxKey.swift
+	public struct MinKey : BSONElementConvertible
+	public init() {}
+	public let elementType = ElementType.MinKey
+	public let bsonData = [UInt8]()
+	public static var bsonLength = BsonLength.Fixed(length: 0)
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> MinKey
+	public static func instantiate(bsonData data: [UInt8]) throws -> MinKey
+	public struct MaxKey : BSONElementConvertible
+	public init() {}
+	public let elementType = ElementType.MaxKey
+	public let bsonData = [UInt8]()
+	public static var bsonLength = BsonLength.Fixed(length: 0)
+	public static func instantiate(bsonData data: [UInt8], inout consumedBytes: Int, type: ElementType) throws -> MaxKey
+	public static func instantiate(bsonData data: [UInt8]) throws -> MaxKey
