@@ -14,7 +14,7 @@
     <a title="Int Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BSON Docs</a> (31% documented)</p>
+        <p><a href="../index.html">BSON Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/PlanTeam/BSON"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -56,6 +56,9 @@
                 <a href="../Extensions/Int32.html">Int32</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/NSData.html">NSData</a>
               </li>
               <li class="nav-group-task">
@@ -63,6 +66,21 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JavaScriptCode.html">JavaScriptCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MinKey.html">MinKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MaxKey.html">MaxKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegularExpression.html">RegularExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Timestamp.html">Timestamp</a>
               </li>
             </ul>
           </li>
@@ -75,30 +93,19 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Details.html">Details</a>
+            <a href="../Used internally.html">Used internally</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/BsonLength.html">BsonLength</a>
+                <a href="../Enums/BSONLength.html">BSONLength</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ElementType.html">ElementType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Details.html#/s:P4BSON16AbstractBSONBase">AbstractBSONBase</a>
+                <a href="../Used internally.html#/s:P4BSON16AbstractBSONBase">AbstractBSONBase</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BSONElementConvertible.html">BSONElementConvertible</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Other Extensions.html">Other Extensions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Extensions/BSON.html">BSON</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Int64.html">Int64</a>
               </li>
             </ul>
           </li>
@@ -114,22 +121,16 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other Structs.html">Other Structs</a>
+            <a href="../Other Subscripts.html">Other Subscripts</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/JavaScriptCode.html">JavaScriptCode</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFSiGSqPS_22BSONElementConvertible__">subscript(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/MaxKey.html">MaxKey</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFSSGSqPS_22BSONElementConvertible__">subscript(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/MinKey.html">MinKey</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/RegularExpression.html">RegularExpression</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Timestamp.html">Timestamp</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFGVSs15DictionaryIndexSSPS_22BSONElementConvertible__TSSPS2___">subscript(_:)</a>
               </li>
             </ul>
           </li>
@@ -163,14 +164,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>On 64-bit platforms, .Int64</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">SignedIntegerType</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">elementType</span><span class="p">:</span> <span class="kt">ElementType</span></code></pre>
 
                         </div>
                       </div>
@@ -190,14 +191,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The same as Int64.instantiate</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">SignedIntegerType</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiate</span><span class="p">(</span><span class="n">bsonData</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -217,14 +218,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The same as Int64.instantiate</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">SignedIntegerType</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiate</span><span class="p">(</span><span class="n">bsonData</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">],</span> <span class="k">inout</span> <span class="nv">consumedBytes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">ElementType</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -244,14 +245,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The same as Int64.bsonData</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">SignedIntegerType</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">bsonData</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -261,9 +262,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZvE4BSONSi10bsonLengthOS_10BsonLength"></a>
+                    <a name="/s:ZvE4BSONSi10bsonLengthOS_10BSONLength"></a>
                     <a name="//apple_ref/swift/Variable/bsonLength" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvE4BSONSi10bsonLengthOS_10BsonLength">bsonLength</a>
+                    <a class="token" href="#/s:ZvE4BSONSi10bsonLengthOS_10BSONLength">bsonLength</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -271,14 +272,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The same as Int64.bsonLength</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">SignedIntegerType</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">bsonLength</span> <span class="o">=</span> <span class="kt">Int64</span><span class="o">.</span><span class="n">bsonLength</span></code></pre>
 
                         </div>
                       </div>

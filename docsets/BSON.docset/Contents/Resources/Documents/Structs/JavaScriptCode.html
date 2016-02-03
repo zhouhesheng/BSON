@@ -14,7 +14,7 @@
     <a title="JavaScriptCode Struct Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BSON Docs</a> (31% documented)</p>
+        <p><a href="../index.html">BSON Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/PlanTeam/BSON"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -56,6 +56,9 @@
                 <a href="../Extensions/Int32.html">Int32</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/NSData.html">NSData</a>
               </li>
               <li class="nav-group-task">
@@ -63,6 +66,21 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JavaScriptCode.html">JavaScriptCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MinKey.html">MinKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MaxKey.html">MaxKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegularExpression.html">RegularExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Timestamp.html">Timestamp</a>
               </li>
             </ul>
           </li>
@@ -75,30 +93,19 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Details.html">Details</a>
+            <a href="../Used internally.html">Used internally</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/BsonLength.html">BsonLength</a>
+                <a href="../Enums/BSONLength.html">BSONLength</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ElementType.html">ElementType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Details.html#/s:P4BSON16AbstractBSONBase">AbstractBSONBase</a>
+                <a href="../Used internally.html#/s:P4BSON16AbstractBSONBase">AbstractBSONBase</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BSONElementConvertible.html">BSONElementConvertible</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Other Extensions.html">Other Extensions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Extensions/BSON.html">BSON</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Int64.html">Int64</a>
               </li>
             </ul>
           </li>
@@ -114,22 +121,16 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other Structs.html">Other Structs</a>
+            <a href="../Other Subscripts.html">Other Subscripts</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/JavaScriptCode.html">JavaScriptCode</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFSiGSqPS_22BSONElementConvertible__">subscript(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/MaxKey.html">MaxKey</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFSSGSqPS_22BSONElementConvertible__">subscript(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/MinKey.html">MinKey</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/RegularExpression.html">RegularExpression</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Timestamp.html">Timestamp</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFGVSs15DictionaryIndexSSPS_22BSONElementConvertible__TSSPS2___">subscript(_:)</a>
               </li>
             </ul>
           </li>
@@ -139,7 +140,13 @@
         <section>
           <section class="section">
             <h1>JavaScriptCode</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JavaScriptCode</span></code></pre>
+
+                </div>
+              </div>
+            <p>BSON spec type 0x0D: <q>JavaScript code</q> or 0x0F: <q>JavaScript code w/ scope</q></p>
 
           </section>
           <section class="section task-group-section">
@@ -158,8 +165,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The code stored in this instance.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">code</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -177,8 +192,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Optional. Setting the scope will store this JavaScriptCode as type 0x0F: <q>JavaScript code w/ scope</q>.</p>
 
+<p>The document is a mapping from identifiers to values, representing the scope in which the string should be evaluated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scope</span><span class="p">:</span> <span class="kt">Document</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -196,8 +221,159 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Create a new JavaScriptCode instance with given code and (optionally) scope.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">code</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">scope</span><span class="p">:</span> <span class="kt">Document</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV4BSON14JavaScriptCode11elementTypeOS_11ElementType"></a>
+                    <a name="//apple_ref/swift/Property/elementType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV4BSON14JavaScriptCode11elementTypeOS_11ElementType">elementType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ElementType of JavaScriptCode is .JavaScriptCode when it does not define scope or .JavascriptCodeWithScope when it does.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">elementType</span><span class="p">:</span> <span class="kt">ElementType</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV4BSON14JavaScriptCode8bsonDataGSaVSs5UInt8_"></a>
+                    <a name="//apple_ref/swift/Property/bsonData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV4BSON14JavaScriptCode8bsonDataGSaVSs5UInt8_">bsonData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convert this JavaScriptCode to BSON data ready for storage.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">bsonData</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV4BSON14JavaScriptCode10bsonLengthOS_10BSONLength"></a>
+                    <a name="//apple_ref/swift/Variable/bsonLength" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV4BSON14JavaScriptCode10bsonLengthOS_10BSONLength">bsonLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>.Undefined</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">bsonLength</span> <span class="o">=</span> <span class="kt">BSONLength</span><span class="o">.</span><span class="kt">Undefined</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFV4BSON14JavaScriptCode11instantiateFMS0_FzT8bsonDataGSaVSs5UInt8__S0_"></a>
+                    <a name="//apple_ref/swift/Method/instantiate(bsonData:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFV4BSON14JavaScriptCode11instantiateFMS0_FzT8bsonDataGSaVSs5UInt8__S0_">instantiate(bsonData:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not possible, because the JavaScriptCode initializer needs to know it&rsquo;s type. Always throws a <code><a href="../Enums/DeserializationError.html#/s:FO4BSON20DeserializationError16InvalidOperationFMS0_S0_">DeserializationError.InvalidOperation</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiate</span><span class="p">(</span><span class="n">bsonData</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">JavaScriptCode</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFV4BSON14JavaScriptCode11instantiateFMS0_FzT8bsonDataGSaVSs5UInt8_13consumedBytesRSi4typeOS_11ElementType_S0_"></a>
+                    <a name="//apple_ref/swift/Method/instantiate(bsonData:consumedBytes:type:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFV4BSON14JavaScriptCode11instantiateFMS0_FzT8bsonDataGSaVSs5UInt8_13consumedBytesRSi4typeOS_11ElementType_S0_">instantiate(bsonData:consumedBytes:type:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Instantiate JavaScriptCode from the given data. Behavior depends on the given <code>type</code>.</p>
+
+<ul>
+<li>param type: If the given data contains scope, this should be .JavascriptCodeWithScope. Otherwise it should be .JavaScriptCode.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiate</span><span class="p">(</span><span class="n">bsonData</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">],</span> <span class="k">inout</span> <span class="nv">consumedBytes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">ElementType</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">JavaScriptCode</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

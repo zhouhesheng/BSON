@@ -14,7 +14,7 @@
     <a title="Document Struct Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BSON Docs</a> (31% documented)</p>
+        <p><a href="../index.html">BSON Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/PlanTeam/BSON"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -56,6 +56,9 @@
                 <a href="../Extensions/Int32.html">Int32</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/Int64.html">Int64</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/NSData.html">NSData</a>
               </li>
               <li class="nav-group-task">
@@ -63,6 +66,21 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JavaScriptCode.html">JavaScriptCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MinKey.html">MinKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MaxKey.html">MaxKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RegularExpression.html">RegularExpression</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Timestamp.html">Timestamp</a>
               </li>
             </ul>
           </li>
@@ -75,30 +93,19 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Details.html">Details</a>
+            <a href="../Used internally.html">Used internally</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/BsonLength.html">BsonLength</a>
+                <a href="../Enums/BSONLength.html">BSONLength</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ElementType.html">ElementType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Details.html#/s:P4BSON16AbstractBSONBase">AbstractBSONBase</a>
+                <a href="../Used internally.html#/s:P4BSON16AbstractBSONBase">AbstractBSONBase</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BSONElementConvertible.html">BSONElementConvertible</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Other Extensions.html">Other Extensions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Extensions/BSON.html">BSON</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Int64.html">Int64</a>
               </li>
             </ul>
           </li>
@@ -114,22 +121,16 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other Structs.html">Other Structs</a>
+            <a href="../Other Subscripts.html">Other Subscripts</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/JavaScriptCode.html">JavaScriptCode</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFSiGSqPS_22BSONElementConvertible__">subscript(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/MaxKey.html">MaxKey</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFSSGSqPS_22BSONElementConvertible__">subscript(_:)</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/MinKey.html">MinKey</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/RegularExpression.html">RegularExpression</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Timestamp.html">Timestamp</a>
+                <a href="../Other Subscripts.html#/s:sV4BSON8Document9subscriptFGVSs15DictionaryIndexSSPS_22BSONElementConvertible__TSSPS2___">subscript(_:)</a>
               </li>
             </ul>
           </li>
@@ -139,7 +140,28 @@
         <section>
           <section class="section">
             <h1>Document</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Document</span></code></pre>
+
+                </div>
+              </div>
+            <p>The base type for all BSON data, defined in the spec as:</p>
+
+<p><code>document   ::= int32 e_list &quot;\x00&quot;</code></p>
+
+<p>A document is comparable with a Swift Array or Dictionary. It can thus be initialized
+by using an array or dictionary literal:</p>
+
+<pre class="highlight plaintext"><code>let d: Document = ["key": "value"]
+let a: Document = ["value 1", "value 2"]
+</code></pre>
+
+<p>In the BSON specification, the following is said about BSON arrays: </p>
+
+<p><code>Array - The document for an array is a normal BSON document with integer values for the keys, starting with 0 and continuing sequentially. For example, the array [&#39;red&#39;, &#39;blue&#39;] would be encoded as the document {&#39;0&#39;: &#39;red&#39;, &#39;1&#39;: &#39;blue&#39;}. The keys must be in ascending numerical order.</code></p>
+
+<p>Because this BSON library exports all documents alphabetically, every document only numerical subsequential keys starting at &lsquo;0&rsquo; will be treated as an array.</p>
 
           </section>
           <section class="section task-group-section">
@@ -158,8 +180,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Initialize a BSON document with the data from the given Foundation <code><a href="../Extensions/NSData.html">NSData</a></code> object.</p>
 
+<p>Will throw a <code><a href="../Enums/DeserializationError.html">DeserializationError</a></code> when the document is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">NSData</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -177,8 +209,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Initialize a BSON document with the given byte array.</p>
 
+<p>Will throw a <code><a href="../Enums/DeserializationError.html">DeserializationError</a></code> when the document is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">])</span> <span class="k">throws</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -200,8 +242,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Initialize a Document using an array of <code><a href="../Protocols/BSONElementConvertible.html">BSONElementConvertible</a></code>s.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">array</span><span class="p">:</span> <span class="p">[</span><span class="kt">BSONElementConvertible</span><span class="p">])</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -281,8 +331,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>.Array or .Document, depending on validatesAsArray()</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">elementType</span><span class="p">:</span> <span class="kt">ElementType</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -300,8 +358,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Serialize the document, ready to store as a BSON file or sending over the network.
+You may concatenate output of this method into one long array, and instantiate that using
+<code>instantiateMultiple(...)</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">bsonData</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">]</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -319,8 +387,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Used internally</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiate</span><span class="p">(</span><span class="n">bsonData</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Document</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -338,8 +414,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Used internally</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiate</span><span class="p">(</span><span class="n">bsonData</span> <span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">],</span> <span class="k">inout</span> <span class="nv">consumedBytes</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">ElementType</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Document</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -347,9 +431,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZvV4BSON8Document10bsonLengthOS_10BsonLength"></a>
+                    <a name="/s:ZvV4BSON8Document10bsonLengthOS_10BSONLength"></a>
                     <a name="//apple_ref/swift/Variable/bsonLength" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvV4BSON8Document10bsonLengthOS_10BsonLength">bsonLength</a>
+                    <a class="token" href="#/s:ZvV4BSON8Document10bsonLengthOS_10BSONLength">bsonLength</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -357,8 +441,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>.Undefined</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">bsonLength</span> <span class="o">=</span> <span class="kt">BSONLength</span><span class="o">.</span><span class="kt">Undefined</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -380,8 +472,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">startIndex</span><span class="p">:</span> <span class="kt">DictionaryIndex</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">FooValue</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -399,8 +499,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">endIndex</span><span class="p">:</span> <span class="kt">DictionaryIndex</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">FooValue</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -418,8 +526,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">indexForKey</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DictionaryIndex</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">FooValue</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -437,8 +553,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">updateValue</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">FooValue</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FooValue</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -456,8 +580,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAtIndex</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="kt">DictionaryIndex</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">FooValue</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">FooValue</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -475,8 +607,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeValueForKey</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">FooValue</span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -494,8 +634,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">(</span><span class="n">keepCapacity</span> <span class="nv">keepCapacity</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -513,8 +661,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -532,8 +688,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">generate</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">DictionaryGenerator</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">FooValue</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -551,8 +715,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">keys</span><span class="p">:</span> <span class="kt">LazyMapCollection</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">FooValue</span><span class="p">],</span> <span class="kt">Key</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -570,8 +742,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">values</span><span class="p">:</span> <span class="kt">LazyMapCollection</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">FooValue</span><span class="p">],</span> <span class="kt">FooValue</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -589,8 +769,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>As required by and documented in <code>SequenceType</code></p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isEmpty</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -612,8 +800,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Instantiates zero or more <code><a href="../Structs/Document.html">Document</a></code>s from the given data. This data is formatted like this:
+<code>let data = document1.bsonData + document2.bsonData</code>, so just multiple documents concatenated.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiateAll</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Document</span><span class="p">]</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -635,8 +832,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Returns the description of all elements in this document. Not ordered correctly.</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
