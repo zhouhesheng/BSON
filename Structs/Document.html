@@ -150,7 +150,7 @@
 
 <p><code>document   ::= int32 e_list &quot;\x00&quot;</code></p>
 
-<p>A document is comparable with a Swift Array or Dictionary. It can thus be initialized
+<p>A document is comparable with a Swift <code>Array</code>or <code>Dictionary</code>. It can thus be initialized
 by using an array or dictionary literal:</p>
 
 <pre class="highlight plaintext"><code>let d: Document = ["key": "value"]
@@ -159,7 +159,7 @@ let a: Document = ["value 1", "value 2"]
 
 <p>In the BSON specification, the following is said about BSON arrays: </p>
 
-<p><code>Array - The document for an array is a normal BSON document with integer values for the keys, starting with 0 and continuing sequentially. For example, the array [&#39;red&#39;, &#39;blue&#39;] would be encoded as the document {&#39;0&#39;: &#39;red&#39;, &#39;1&#39;: &#39;blue&#39;}. The keys must be in ascending numerical order.</code></p>
+<p>Array - The document for an array is a normal BSON document with integer values for the keys, starting with 0 and continuing sequentially. For example, the array <code>[&#39;red&#39;, &#39;blue&#39;]</code> would be encoded as the document <code>{&#39;0&#39;: &#39;red&#39;, &#39;1&#39;: &#39;blue&#39;}</code>. The keys must be in ascending numerical order.</p>
 
 <p>Because this BSON library exports all documents alphabetically, every document only numerical subsequential keys starting at &lsquo;0&rsquo; will be treated as an array.</p>
 
