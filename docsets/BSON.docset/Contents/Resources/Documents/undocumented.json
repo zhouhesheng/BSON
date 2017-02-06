@@ -1,1 +1,880 @@
-{"warnings":[{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Document.swift","line":11,"symbol":"BSONArrayProtocol","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Document.swift","line":null,"symbol":"BSONArrayProtocol","symbol_kind":"source.lang.swift.decl.extension","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Document.swift","line":326,"symbol":"DocumentIndex","symbol_kind":"source.lang.swift.decl.struct","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":13,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":48,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":52,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":56,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":60,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":64,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":72,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":80,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":90,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":98,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":102,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":106,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":114,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":118,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":126,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":130,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Comparing.swift","line":134,"symbol":"===(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Extraction.swift","line":158,"symbol":"storedValue","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Extraction.swift","line":218,"symbol":"value","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value+Serialization.swift","line":12,"symbol":"bytes","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/Value.swift","line":167,"symbol":"<(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/ValueConvertible.swift","line":11,"symbol":"ValueConvertible","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/joannis/Documents/OpenKitten/BSON/Sources/ValueConvertible.swift","line":87,"symbol":"~(_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"}],"source_directory":"/Users/joannis/Documents/OpenKitten/BSON"}
+{
+  "warnings": [
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Compatibility.swift",
+      "line": null,
+      "symbol": "RegularExpression",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Decimal.swift",
+      "line": 3,
+      "symbol": "Decimal128",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Decimal.swift",
+      "line": 4,
+      "symbol": "Decimal128.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Decimal.swift",
+      "line": 12,
+      "symbol": "Decimal128.raw",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Decimal.swift",
+      "line": 31,
+      "symbol": "Decimal128.init(raw:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Decimal.swift",
+      "line": 35,
+      "symbol": "Decimal128.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+ParsingSupport.swift",
+      "line": 11,
+      "symbol": "fromBytes(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+ParsingSupport.swift",
+      "line": 20,
+      "symbol": "Collection.makeInt32Array()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+ParsingSupport.swift",
+      "line": 52,
+      "symbol": "Collection.makeInt32()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+ParsingSupport.swift",
+      "line": 62,
+      "symbol": "Collection.makeInt64()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 11,
+      "symbol": "SubscriptExpression",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 12,
+      "symbol": "SubscriptExpression.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 13,
+      "symbol": "SubscriptExpression.staticString",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 14,
+      "symbol": "SubscriptExpression.integer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 17,
+      "symbol": "SubscriptExpressionType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 18,
+      "symbol": "SubscriptExpressionType.subscriptExpression",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 22,
+      "symbol": "String.subscriptExpression",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 28,
+      "symbol": "StaticString.subscriptExpression",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document+Subscripts.swift",
+      "line": 34,
+      "symbol": "Int.subscriptExpression",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 11,
+      "symbol": "StringVariant",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 12,
+      "symbol": "StringVariant.bsonStringBinary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 16,
+      "symbol": "StaticString.bsonStringBinary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 25,
+      "symbol": "String.bsonStringBinary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 30,
+      "symbol": "_DocumentProtocolForArrayAdditions",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 31,
+      "symbol": "_DocumentProtocolForArrayAdditions.bytes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 32,
+      "symbol": "_DocumentProtocolForArrayAdditions.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 33,
+      "symbol": "_DocumentProtocolForArrayAdditions.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 34,
+      "symbol": "_DocumentProtocolForArrayAdditions.validate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 46,
+      "symbol": "Array.init(bsonBytes:validating:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 54,
+      "symbol": "Array.init(bsonBytes:validating:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 88,
+      "symbol": "ElementType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 89,
+      "symbol": "ElementType.double",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 90,
+      "symbol": "ElementType.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 91,
+      "symbol": "ElementType.document",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 92,
+      "symbol": "ElementType.arrayDocument",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 93,
+      "symbol": "ElementType.binary",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 94,
+      "symbol": "ElementType.objectId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 95,
+      "symbol": "ElementType.boolean",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 96,
+      "symbol": "ElementType.utcDateTime",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 97,
+      "symbol": "ElementType.nullValue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 98,
+      "symbol": "ElementType.regex",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 99,
+      "symbol": "ElementType.javascriptCode",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 100,
+      "symbol": "ElementType.javascriptCodeWithScope",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 101,
+      "symbol": "ElementType.int32",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 102,
+      "symbol": "ElementType.timestamp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 103,
+      "symbol": "ElementType.int64",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 104,
+      "symbol": "ElementType.decimal128",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 105,
+      "symbol": "ElementType.minKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 106,
+      "symbol": "ElementType.maxKey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/Document.swift",
+      "line": 477,
+      "symbol": "DocumentIndex",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ObjectId.swift",
+      "line": 124,
+      "symbol": "ObjectId.epochSeconds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ObjectId.swift",
+      "line": 130,
+      "symbol": "ObjectId.epoch",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible+Extraction.swift",
+      "line": 83,
+      "symbol": "ValueConvertible.int64",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible+Extraction.swift",
+      "line": 104,
+      "symbol": "ValueConvertible.int",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible+Extraction.swift",
+      "line": 119,
+      "symbol": "ValueConvertible.int32",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": null,
+      "symbol": "ValueConvertible",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": null,
+      "symbol": "ValueConvertible",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 25,
+      "symbol": "ValueConvertible",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 26,
+      "symbol": "ValueConvertible.makeBSONPrimitive()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 27,
+      "symbol": "ValueConvertible.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 32,
+      "symbol": "BSONPrimitive.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 34,
+      "symbol": "BSONPrimitive.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 38,
+      "symbol": "BSONPrimitive.makeBSONPrimitive()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 44,
+      "symbol": "ValueConvertible.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 71,
+      "symbol": "BinaryConvertible",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 72,
+      "symbol": "BinaryConvertible.makeBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 76,
+      "symbol": "Data.makeBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 81,
+      "symbol": "Timestamp",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 89,
+      "symbol": "Timestamp.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 93,
+      "symbol": "Timestamp.init(increment:timestamp:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 98,
+      "symbol": "Timestamp.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 102,
+      "symbol": "Timestamp.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 107,
+      "symbol": "Binary",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 163,
+      "symbol": "Binary.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 164,
+      "symbol": "Binary.subtype",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 166,
+      "symbol": "Binary.init(data:withSubtype:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 171,
+      "symbol": "Binary.init(data:withSubtype:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 176,
+      "symbol": "Binary.makeBytes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 184,
+      "symbol": "Binary.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 188,
+      "symbol": "Binary.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 198,
+      "symbol": "Binary.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 206,
+      "symbol": "Null",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 207,
+      "symbol": "Null.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 211,
+      "symbol": "Null.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 213,
+      "symbol": "Null.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 217,
+      "symbol": "Null.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 222,
+      "symbol": "JavascriptCode",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 223,
+      "symbol": "JavascriptCode.code",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 224,
+      "symbol": "JavascriptCode.scope",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 226,
+      "symbol": "JavascriptCode.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 230,
+      "symbol": "JavascriptCode.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 239,
+      "symbol": "JavascriptCode.init(_:withScope:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 244,
+      "symbol": "JavascriptCode.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 254,
+      "symbol": "Bool.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 258,
+      "symbol": "Bool.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 262,
+      "symbol": "Bool.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 268,
+      "symbol": "Double.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 272,
+      "symbol": "Double.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 276,
+      "symbol": "Double.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 282,
+      "symbol": "Int32.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 286,
+      "symbol": "Int32.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 290,
+      "symbol": "Int32.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 296,
+      "symbol": "Int64.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 300,
+      "symbol": "Int64.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 304,
+      "symbol": "Int64.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 310,
+      "symbol": "Int.makeBSONPrimitive()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 326,
+      "symbol": "Date.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 331,
+      "symbol": "Date.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 335,
+      "symbol": "Date.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 342,
+      "symbol": "String.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 349,
+      "symbol": "String.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 353,
+      "symbol": "String.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 359,
+      "symbol": "StaticString.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 367,
+      "symbol": "StaticString.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 371,
+      "symbol": "StaticString.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 379,
+      "symbol": "Document.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 383,
+      "symbol": "Document.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 389,
+      "symbol": "ObjectId.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 393,
+      "symbol": "ObjectId.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 397,
+      "symbol": "ObjectId.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 435,
+      "symbol": "Data.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 439,
+      "symbol": "Data.makeBSONPrimitive()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 445,
+      "symbol": "RegularExpression.typeIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 449,
+      "symbol": "RegularExpression.makeBSONBinary()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/laurent/Developer/OpenKitten/BSON/Sources/ValueConvertible.swift",
+      "line": 453,
+      "symbol": "RegularExpression.makeExtendedJSON()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/laurent/Developer/OpenKitten/BSON"
+}
