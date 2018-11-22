@@ -13,3 +13,5 @@ var document: Document = [
 document["temperature"]["kaas"]["sap"] = 6
 
 Int(document["temperature"]["kaas"]["sap"])
+
+print(document)
